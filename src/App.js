@@ -1,14 +1,13 @@
-import './App.css';
-import Footer from './Footer';
-import Header from './Header';
-import Technologies from './Technologies'
-
+import "./App.css";
+import Profile from "./components/Profile";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 function App() {
   return (
-    <div className="App">
+    <div className="app-wrapper">
       <Header />
-      <Technologies />
-      <Footer />
+      <Navbar />
+      <Profile />
     </div>
   );
 }
