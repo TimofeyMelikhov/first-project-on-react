@@ -6,7 +6,7 @@ const Header = () => {
         alt=""
       />
       <div>
-        adsadadsda
+        
       </div>
     </header>
   )
