@@ -8,6 +8,7 @@ function App() {
       <Header />
       <Navbar />
       <Profile />
+      s
     </div>
   );
 }
