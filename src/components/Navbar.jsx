@@ -16,6 +16,9 @@ const Navbar = () => {
       <div>
         <a href="#"> Settings </a>
       </div>
+      <div>
+        <a href="#"> New tab </a>
+      </div>
     </nav>
   );
 };
