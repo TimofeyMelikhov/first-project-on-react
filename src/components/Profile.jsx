@@ -1,6 +1,7 @@
+import s from './Profile.module.css'
 const Profile = () => {
   return (
-    <div className="content">
+    <div className={s.content}>
       <div>
         <img
           src="https://www.istockphoto.com/resources/images/HomePage/Hero/682374404.jpg"
