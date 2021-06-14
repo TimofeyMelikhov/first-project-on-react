@@ -1,4 +1,5 @@
 import s from './Profile.module.scss'
+import MyPosts from './MyPosts/MyPosts'
 const Profile = () => {
   return (
     <div className={s.content}>
@@ -9,12 +10,7 @@ const Profile = () => {
         />
       </div>
       <div>ava + descr</div>
-      <div>
-        my post
-        <div>new post</div>
-        <div>post 1</div>
-        <div>post 2</div>
-      </div>
+      <MyPosts />
     </div>
   );
 };
