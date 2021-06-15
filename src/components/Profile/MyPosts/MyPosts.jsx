@@ -8,8 +8,8 @@ const MyPosts = () => {
           New Posts
         </div>
         <div className={s.posts}>
-          <Post  message ='Hi, how are you?'/>
-          <Post  message ="It's my first post"/>
+          <Post  message ='Hi, how are you?' counts='22'/>
+          <Post  message ="It's my first post" counts='34'/>
         </div>
       </div>
   );
