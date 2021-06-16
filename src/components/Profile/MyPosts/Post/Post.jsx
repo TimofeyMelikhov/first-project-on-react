@@ -7,7 +7,7 @@ const Post = (props) => {
         alt="Аватар пользователя"
       />
       { props.message }
-      <div>Like {props.counts}</div>
+      <div>Likes {props.counts}</div>
     </div>
   );
 };
