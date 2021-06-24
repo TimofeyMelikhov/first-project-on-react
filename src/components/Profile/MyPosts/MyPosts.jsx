@@ -1,19 +1,8 @@
 import s from './MyPosts.module.scss'
 import Post from './Post/Post'
-const MyPosts = () => {
+const MyPosts = (props) => {
 
-  let postsData = [
-    {
-      id: 1,
-      message: 'Hi, how are you?',
-      likesCount: 22
-    },
-    {
-      id: 2,
-      message: 'It\'s my first post',
-      likesCount: 34
-    }
-  ]
+  let postsElement = props.posts.map(p => <Post message ={p.message} counts={p.likesCount}/>)
 
   return (
       <div className={s.postsBlock}>
@@ -25,8 +14,7 @@ const MyPosts = () => {
           <button>Add post</button>
         </div>
         <div className={s.posts}>
-          <Post message ={postsData[0].message} counts={postsData[0].likesCount}/>
-          <Post message ={postsData[1].message} counts={postsData[1].likesCount}/>
+          {postsElement}
         </div>
       </div>
   );
