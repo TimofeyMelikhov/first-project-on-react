@@ -52,7 +52,8 @@ let state = {
         id: 3,
         message: 'Have a nice day!'
       }
-    ]
+    ],
+    newTextMessage: ''
   }
 };
 
@@ -71,6 +72,21 @@ export let addPost = () => {
 export let updateNewPostText = (newText) => {
   state.profilePage.newPostText = newText
   rerenderEntireTree(state);
+}
+
+export let sendMessage = () => {
+  let newMessage = {
+    id: 4,
+    message: state.dialogsPage.newTextMessage
+  };
+  state.dialogsPage.messages.push(newMessage);
+  state.dialogsPage.newTextMessage = ''
+  rerenderEntireTree(state)
+}
+
+export let updateNewMessageText = (textMessage) => {
+  state.dialogsPage.newTextMessage = textMessage
+  rerenderEntireTree(state)
 }
 
 export default state;
