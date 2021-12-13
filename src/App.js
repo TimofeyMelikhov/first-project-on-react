@@ -15,6 +15,15 @@ function App(props) {
       <Navbar />
       <div className="app-wrapper-content">
         <Route
+          path="/profile"
+          render={() => (
+            <Profile
+              profilePage={props.state.profilePage}
+              dispatch={props.dispatch}
+            />
+          )}
+        />
+        <Route
           path="/dialogs"
           render={() => (
             <Dialogs
@@ -22,15 +31,6 @@ function App(props) {
               newTextMessage={props.state.dialogsPage.newTextMessage}
               sendMessage={props.sendMessage}
               updateNewMessageText={props.updateNewMessageText}
-            />
-          )}
-        />
-        <Route
-          path="/profile"
-          render={() => (
-            <Profile
-              profilePage={props.state.profilePage}
-              dispatch={props.dispatch}
             />
           )}
         />
