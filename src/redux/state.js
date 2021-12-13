@@ -147,4 +147,4 @@ export const updateNewMessageTextActionCreator = (newTextMessage) => ({
 })
 
 export default store;
-window.store = store
+window.store = store;
