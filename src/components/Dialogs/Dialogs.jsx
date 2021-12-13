@@ -12,9 +12,7 @@ const Dialogs = (props) => {
   }
 
   let onMessageChange = () => {
-    debugger
     let textMessage = newMessageElement.current.value;
-    debugger
     props.dispatch(updateNewMessageTextActionCreator(textMessage))
   }
 
